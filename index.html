@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrello App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div id="confirmModal" class="modal">
+        <div class="modal-content">
+          <p id="confirmModalText">Sei sicuro di voler resettare il modulo?</p>
+          <button data-action="confirm">Sì</button>
+          <button data-action="cancel">No</button>
+        </div>
+      </div>
+      <div id="shoppingCart">
+        <table id="table">
+          <caption>
+            CARRELLO
+          </caption>
+          <thead>
+            <tr>
+              <th>Quantità</th>
+              <th>Descrizione</th>
+              <th>Costo unitario</th>
+              <th>Totale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="number" class="product-quantity" /></td>
+              <td>Mouse</td>
+              <td class="product-unit-price">16€</td>
+              <td class="product-total-price"></td>
+            </tr>
+            <tr>
+              <td><input type="number" class="product-quantity" /></td>
+              <td>Tastiera 105 tasti</td>
+              <td class="product-unit-price">25€</td>
+              <td class="product-total-price"></td>
+            </tr>
+            <tr>
+              <td><input type="number" class="product-quantity" /></td>
+              <td>Stampante deskjet colori</td>
+              <td class="product-unit-price">350€</td>
+              <td class="product-total-price"></td>
+            </tr>
+            <tr>
+              <td><input type="number" class="product-quantity" /></td>
+              <td>Scanner A4 colori</td>
+              <td class="product-unit-price">200€</td>
+              <td class="product-total-price"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Totale ordine</td>
+              <td id="grandTotal"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div id="messageArea" class="message-area"></div>
+        <button id="resetButton">Azzera</button>
+        <button id="helpButton">Aiuto</button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

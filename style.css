@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+caption {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 60rem;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 1rem;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+.modal {
+    display: none;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 10px;
+
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-area {
+    color: red;
+    margin-top: 10px;
+}
